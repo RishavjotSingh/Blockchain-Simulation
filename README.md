@@ -8,7 +8,7 @@
 After cloning or copy-pasting the code from the Python file, use this command in Terminal/Command Prompt to run the code:
 ```python blockchain_simulation.py```
 
-### Important Information: 
+## Important Information
 - I use two ports: hostPort = 8306 and announceBlockHostPort = 8308.
 - announcedBlocksPort is the port which I use to announce the block that I mine. Actually, I make a new socket whenever I mine a block to announce that block, so this new announcedBlocksPort is required because hostPort is already in use at that time. 
 - So, please make sure that both of these ports are not in use when you run the code. If announceBlockHostPort is in use then the socket will not bind. So, please check this before running.
